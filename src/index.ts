@@ -171,7 +171,7 @@ io.on("connection", (socket) => {
     console.log(`${user.userId} started a live session: ${sessionName}`);
     const session = { hostId: user.userId,  userImage : user.userImage,  userName : user.userName, sessionName };
 
-    console.log("session Checker :::::: ", session);
+    console.log("session Checker :::::: with image ", session);
     liveSessions.push(session);
     io.emit("new-live-session", session);
   });
